@@ -1,14 +1,14 @@
 <template>
   <div class="nav-bar">
-    <div class="left"><slot name=""></slot></div>
-    <div class="center"><slot></slot></div>
-    <div class="right"><slot></slot></div>
+    <div class="left"><slot name="left"></slot></div>
+    <div class="center"><slot name="center"></slot></div>
+    <div class="right"><slot name="right"></slot></div>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'TabBar',
+  name: 'NavBar',
   components: {
 
   }
@@ -16,14 +16,19 @@ export default {
 </script>
 
 <style>
-  #tab-bar {
+  .nav-bar {
     display: flex;
-    background-color: #f6f6f6;
-    position: fixed;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    box-shadow: 0 -1px 1px rgba(100, 100, 100, .2);
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+
+    box-shadow: 0 1px 1px rgba(100, 100, 100, 0.1);
+  }
+  .left, .right {
+    width: 60px;
+  }
+  .center {
+    flex: 1;
   }
 
 </style>
