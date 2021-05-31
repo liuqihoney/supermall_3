@@ -11,7 +11,7 @@
 import BScroll from 'better-scroll'
 
 export default {
-  name: 'Category',
+  name: 'TestBetterScroll',
   data() {
     return {
       scroll: null
@@ -54,7 +54,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
 .wrapper {
   height: 200px;
   background-color: sandybrown;

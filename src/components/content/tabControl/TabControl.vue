@@ -29,12 +29,14 @@ export default {
   methods: {
     itemClick(index) {
       this.currentIndex = index
+      // 传递给父组件
+      this.$emit('tabClick', index)
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
 .tab-control {
   display: flex;
   height: 40px;
